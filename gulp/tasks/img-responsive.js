@@ -18,7 +18,7 @@ module.exports = function () {
 					quality: 75, progressive: true, rename: { prefix: '@2x/', },
 				},
 				{
-					webp: { quality: 75 }, progressive: true, rename: { prefix: '@2x/webp/', extname: '.webp' },
+					webp: { quality: 100 }, progressive: true, rename: { prefix: '@2x/webp/', extname: '.webp' },
 				},
 					// {
 					// 	// Produce @2x images

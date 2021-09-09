@@ -1,0 +1,129 @@
+// start .sSchedule
+.sSchedule {
+		// --sPT: ;
+		// --sPB: ;
+		// --sTPB: ;
+	&__first-row   &__col{
+				
+				.schedule-item  {
+					@include media-breakpoint-up(md) {
+						
+						&::before{
+							right: -.5rem;
+							top: 50%;
+							transform: translateY(-50%);
+							// margin-top: -.5rem;
+						}
+						&::after{
+							left: 100%;
+							top: 50%;
+							margin-top: rem(2);
+							transform: translateY(-50%);
+						}
+					} 
+					@include media-breakpoint-down(md) {
+						&::before {
+							left: 30px;
+							top: 100%;
+							transform: translateY(-50%);
+							// margin-top: -.5rem;
+						}
+	
+						&::after {
+							content: url(../img/svg/arrow-down.svg);
+							left: 30px;
+							top: 100%;
+							margin-top: 6px;
+							// transform: translateY(-50%);
+						}
+	
+					}
+				}
+					&:nth-child(6) .schedule-item{
+						&::before,
+						&::after{
+							display: none;
+						}
+					}
+				@include media-breakpoint-up(lg) {
+
+					&:nth-child(3) .schedule-item {
+						&::before {
+
+							// right: -.5rem;
+							top: 100%;
+							left: 50%;
+							transform: translate(-50%,-50%);
+							// margin-top: -.5rem;
+						}
+						
+						&::after {
+							content: url(../img/svg/arrow-long.svg);
+							right: 50%;
+							top: 100%;
+							left: auto;
+							margin-top: 0;
+							transform: translateY(0);
+						}
+					}
+				}
+	}
+		&__second-row {
+			.schedule-item {
+				&::before {
+					left: 30px;
+					top: 100%;
+					transform: translateY(-50%);
+					// margin-top: -.5rem;
+				}
+
+				&::after {
+					content: url(../img/svg/arrow-down.svg);
+					left: 30px;
+					top: 100%;
+					margin-top: 6px;
+					// transform: translateY(-50%);
+				}
+
+				&:last-child {
+
+					&::before,
+					&::after {
+						display: none;
+					}
+				}
+			}
+
+		}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sSchedule
+
+.schedule-item{
+	padding: rem(26) rem(32);
+	background-color: #fff;
+	border-radius: 20px;
+	min-height: calc(100% - 40px);
+	margin-bottom: 40px;
+	&__head{
+		margin-bottom: rem(20);
+	}
+	position: relative;
+	&::before{
+		content: '';
+		width: 1rem;
+		height: 1rem;
+		border-radius: 50%;
+		background-color: $primary;
+		position: absolute;
+	}
+	&::after{
+		content: url(../img/svg/arrow-right.svg);
+		position: absolute;
+	}
+}

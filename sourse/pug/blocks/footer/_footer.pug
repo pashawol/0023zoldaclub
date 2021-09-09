@@ -1,9 +1,59 @@
 mixin footer()
-	+b.FOOTER.footer
-		.container
-			.row
-				.col
-					
-				.col
-				.col
-				.col-auto
+  footer.foot
+    .container
+      .before
+      .row
+        .col-lg
+          .foot__left-col
+            .foot__txt.foot__txt--h6
+              .row.mb-3 
+                .col-sm-auto.mb-2
+                  +logo('#000',"111", "95")
+                .col
+                  p
+                    script.
+                      function InfoDVDCurrentYear(year) {
+                        var cur = new Date();
+                        if (cur.getFullYear() != year)
+                          document.write(year + '&mdash;' + cur.getFullYear());
+                        else document.write(year);
+                      }
+                      InfoDVDCurrentYear('2008');
+                    |   © издательство
+                    | 
+                    a(href='//www.info-dvd.ru/?utm_source=footer_link'  target='_blank') Info-DVD.Ru
+                    br
+                    | Проект «
+                    a(href='//www.infoclub.info/'  target='_blank') Инфоклуб
+                    | »
+                    br
+                    script(src='//info-dvd.ru/codes/js/legal.utf8.js')
+            .foot__txt
+              p
+                a.tdu(href='//info-dvd.ru/professional/', target='_blank', title='экспертам-авторам (инфо-продюсирование)')
+                  | экспертам-авторам (инфо-продюсирование)
+                br
+                a.tdu(href='//info-dvd.ru/about/partnership', target='_blank', title='партнёрская программа')
+                  | партнёрская программа
+                br
+                a.tdu(href='//info-dvd.ru/pages/privacy', target='_blank', title='политика конфиденциальности')  политика конфиденциальности
+                br
+                a.tdu(href='//info-dvd.ru/pages/risk-warning', target='_blank', title='предупреждение о рисках')  предупреждение о рисках
+        .col-md-5
+          .foot__right-col
+            .foot__txt
+              p
+                | #[strong  Служба поддержки:]
+                a.tdu(href='//info.support-desk.ru/form', target='_blank', title='Задать свой вопрос') Задать свой вопрос
+                br
+                a.tdu(href='//info.support-desk.ru/?base=1', target='_blank' title='Частые вопросы и ответы на них') Частые вопросы и ответы на них
+            .foot__txt
+              p
+                strong  Позвоните нам:
+                span
+                  script(   src='//info-dvd.ru/codes/js/telephone-number.js')
+                br
+                | или 
+                a.tdu(href='//info-dvd.ru/support/apply/', target='_blank') оставьте свой номер 
+                | &nbsp;и мы вам перезвоним
+

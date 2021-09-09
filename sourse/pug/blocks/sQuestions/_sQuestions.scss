@@ -1,0 +1,108 @@
+// start .sQuestions
+.sQuestions {
+	@include media-breakpoint-up(xl){
+		--sPT: #{rem(50px)};
+		--sTPB: #{rem(45)};
+		--sPB: #{rem(30px)};
+	}
+
+	.section-title{
+		h2{
+			max-width: rem(940);
+			@include media-breakpoint-up(xl){
+				font-size: rem(49.6);
+			}
+		}
+		p{
+			max-width: rem(1070);
+			font-weight: 600;
+			font-size: rem(19.6);
+			line-height: 1.65;
+			margin-bottom: rem(31);
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__container{
+		@include media-breakpoint-up(xxl){
+			padding-right: rem(23);
+		}
+	}
+
+	&__items{
+
+	}
+	&__item{
+		background: #FFFFFF;
+		border-radius: 20px;
+		margin-bottom: 24px;
+	}
+	&__head{
+		cursor: pointer;
+		font-weight: 700;
+		font-size: rem(24);
+		line-height: 1.55;
+
+		display: flex;
+		align-items: center;
+
+		padding: rem(16) rem(20);
+		@include media-breakpoint-up(md){
+			padding: rem(21) rem(31) rem(21) rem(32);
+		}
+	}
+	&__head.active &__head-icon{
+		&::after{
+			transform: rotate(0);
+		}
+	}
+	&__head-icon{
+		@include mt();
+		flex-shrink: 0;
+		margin-left: auto;
+		width: rem(20);
+		height: rem(20);
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transform: rotate(var(--chevron-rotate));
+
+		position: relative;
+		width: 16px;
+		height: 16px;
+		&::before,
+		&::after{
+			content: '';
+			width: 16px;
+			height: 1px;
+			position: absolute;
+			@include a-cent;
+			background: #5c49df;
+			@include mt;
+		}
+		&::after{
+			transform: rotate(90deg);
+		}
+	}
+	&__content{
+
+		display: none;
+		&.active{
+			display: block;
+		}
+
+		padding: rem(5) rem(20) rem(20) rem(20);
+		@include media-breakpoint-up(md){
+			padding: rem(5) rem(120) rem(30) rem(32);
+		}
+
+
+		font-size: rem(19.68);
+		line-height: 1.75;
+
+	}
+	&__{}
+} // end.sQuestions

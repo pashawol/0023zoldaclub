@@ -1,7 +1,13 @@
 
 	// start .header
 	.header {
-		 
+		@include media-breakpoint-up(md) {
+			
+			background: url(../img/@2x/webp/head-bg.webp), linear-gradient(106.89deg, #FFF6F7 17.07%, #F4EEFF 75.11%);
+			@include bgs;
+		}
+		background:  linear-gradient(106.89deg, #FFF6F7 17.07%, #F4EEFF 75.11%);
+			@include bgs;
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

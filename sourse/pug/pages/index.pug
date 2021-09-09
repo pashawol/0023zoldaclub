@@ -2,8 +2,23 @@ extends layout/main.pug
 
 
 include ../blocks/sContent/_sContent.pug
-include ../blocks/sContact/_sContact.pug
-include ../blocks/sTEst00/_sTEst00.pug
+include ../blocks/sDream/_sDream.pug
+include ../blocks/sSecret/_sSecret.pug
+include ../blocks/sAuthor/_sAuthor.pug
+include ../blocks/sCases/_sCases.pug
+include ../blocks/sWantResult/_sWantResult.pug
+include ../blocks/sOcean/_sOcean.pug
+include ../blocks/sMainFeatures/_sMainFeatures.pug
+include ../blocks/sSchedule/_sSchedule.pug
+include ../blocks/sMeetings/_sMeetings.pug
+include ../blocks/sBonuses/_sBonuses.pug
+include ../blocks/sPrises/_sPrises.pug
+include ../blocks/sWhatPrise/_sWhatPrise.pug
+include ../blocks/sStudentsCases/_sStudentsCases.pug
+include ../blocks/sRews/_sRews.pug
+include ../blocks/sRewsSlider/_sRewsSlider.pug
+include ../blocks/sFinal/_sFinal.pug
+include ../blocks/sQuestions/_sQuestions.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -12,18 +27,31 @@ block variables
 block title
 	- let  title= 'title'
 	title= title
-block pagecontent 
-	a.btn.bnt-primary.link-modal-js(href="#modal-call") sadasdsa 
-	a.btn.bnt-primary.link-modal-js(href="#modal-call") sadasdsa 
+block pagecontent
 	+mob-mnu()
-	+icon("telegram")
-	+header()
-	+top-nav()
-	
-	+topLine()
-	+headerBlock()
-	+sForm()
-	+sContact()
+	+header
+		+top-nav()
+		+headerBlock()
+	+sDream
+	+sSecret
+	+sAuthor
+	+sCases
+	+sWantResult
+	+sOcean
+	+sMainFeatures
+	.bg-gr
+		+sSchedule
+		+sMeetings
+	+sBonuses
+	+sPrises
+	+sWhatPrise
+	+sWantResult2
+	+sStudentsCases
+	+sRews
+	+sRewsSlider
+	.bg-gr
+		+sQuestions
+		+sFinal
 	+footer()
       
 

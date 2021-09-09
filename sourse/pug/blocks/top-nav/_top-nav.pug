@@ -18,11 +18,13 @@ mixin top-nav()
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
-			.row
-				.col-auto.d-lg-none
-					+b.toggle-menu-mobile--js
-						span
-				.col.d-none.d-lg-block
-					+mnu()
-					
+			+e.inner
+				.row
+					.col.d-none.d-lg-block
+						+mnu()
+					.col-lg-auto.col
+						+e.btn(href="#")  Вступить в Клуб
+					.col-auto.d-lg-none
+						+b.toggle-menu-mobile--js
+							span
 	// end top-nav

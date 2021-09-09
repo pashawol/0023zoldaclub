@@ -1,0 +1,26 @@
+mixin sBonuses(data)
+	// start sBonuses
+	+b.SECTION.sBonuses.section#sBonuses&attributes(attributes)
+		.container
+			+b.section-title
+				h2 
+					span Участвуя в&nbsp;Клубе трейдеров,
+					| Вы&nbsp;получаете шикарные бонусы на&nbsp;общую сумму 270&nbsp;000&nbsp;рублей!
+				
+			.row
+				mixin item(t,p,c)
+					+e.col.col-xl-4.col-lg-6
+						+e.item.bg-gr
+							+e.label Бонус!
+							+e.title.h5.strong!= t
+							if p 
+								p!= p
+							+e.footer.text-center
+								+e.price
+									span!= c
+									| ₽ 
+								+e.label-foot  Бесплатно!
+				+item(`Доступ на&nbsp;1&nbsp;год  в&nbsp;закрытый Telegram-чат Клуба для общения участников и&nbsp;обмена опытом`,``,`30 000 `)
+				+item(`Участие в&nbsp;2-недельных живых интенсивах, которые будут проводиться для новых потоков каждые 2&nbsp;месяца на&nbsp;протяжении 1&nbsp;года`,`За&nbsp;время Вашего участия в&nbsp;Клубе Вы&nbsp;сможете 6&nbsp;раз пройти живые занятия интенсива. Это&nbsp;6 Ваших новых шансов начать с&nbsp;начала, если вдруг&nbsp;Вы выпали из&nbsp;процесса по&nbsp;личным причинам`,`165 000 `)
+				+item(`Контроль Вашей статистики торговли тренером  и&nbsp;куратором`,`На&nbsp;старте сопровождения в&nbsp;Клубе Вы&nbsp;создадите мониторинг Вашего торгового счёта, а&nbsp;мы&nbsp;будем наблюдать за&nbsp;Вашей торговлей на&nbsp;протяжении года и&nbsp;корректировать Ваши действия при необходимости`,`75 000 `)
+	// end sBonuses

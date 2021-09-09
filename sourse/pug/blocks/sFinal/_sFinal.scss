@@ -1,0 +1,45 @@
+// start .sFinal
+.sFinal {
+		// --sPT: ;
+		// --sPB: ;
+		// --sTPB: ;
+		.section-title{
+			max-width: rem(650);
+			
+		}
+		h2{
+			margin-bottom: 30px;
+			span{
+				display: inline-block;
+			}
+		}
+		p{
+			max-width: rem(600);
+			margin-bottom: 1em;
+		}
+	.row{
+		align-items: flex-end;
+	}
+	&__block{
+		background: #FFFFFF;
+		border-radius: 20px;
+		text-align: center;
+		font-size: rem(24);
+		font-weight: bold;
+		margin-bottom: var(--sTPB);
+		span{
+			color: $primary;
+		}
+		@include media-breakpoint-up(md) {
+			padding: rem(58) rem(45);
+		}
+		padding: rem(20) rem(15);
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sFinal

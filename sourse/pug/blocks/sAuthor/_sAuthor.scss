@@ -1,0 +1,54 @@
+// start .sAuthor
+.sAuthor {
+		// --sPT: ;
+		--sPB: 100px !important;
+		// --sTPB: ;
+		background-size: contain;
+		background-image: url(../img/svg/author-bg.svg);
+		background-position: bottom left;
+	h2{	
+		max-width: 700px;
+		span{
+			display: block;
+		}
+	}
+	li{
+		list-style: none;
+		@include media-breakpoint-up(xl) {
+
+			max-width: rem(555);
+		}
+		@include media-breakpoint-up(lg) {
+
+			max-width: rem(405);
+		}
+		position: relative;
+		padding-left: 30px;
+		margin-bottom: 1em; 
+		&::before{
+			content: url(../img/svg/mark.svg);
+			left: 0;
+			position: absolute;
+			top: rem(4);
+		}
+	}
+	picture{
+		@include media-breakpoint-up(lg){
+			
+			position: absolute;
+			bottom: 0;
+		}
+		text-align: center;
+		@include media-breakpoint-up(xl){
+			right: 45px;
+		}
+		right: 0;
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sAuthor

@@ -186,47 +186,7 @@ const JSCCommon = {
 			document.body.insertAdjacentHTML("beforeend", '<div class="browsehappy">	<p class=" container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p></div>');
 		}
 	},
-	sendForm() {
-		var gets = (function () {
-			var a = window.location.search;
-			var b = new Object();
-			var c;
-			a = a.substring(1).split("&");
-			for (var i = 0; i < a.length; i++) {
-				c = a[i].split("=");
-				b[c[0]] = c[1];
-			}
-			return b;
-		})();
-		// form
-		$(document).on('submit', "form", function (e) {
-			e.preventDefault();
-			const th = $(this);
-			var data = th.serialize();
-			th.find('.utm_source').val(decodeURIComponent(gets['utm_source'] || ''));
-			th.find('.utm_term').val(decodeURIComponent(gets['utm_term'] || ''));
-			th.find('.utm_medium').val(decodeURIComponent(gets['utm_medium'] || ''));
-			th.find('.utm_campaign').val(decodeURIComponent(gets['utm_campaign'] || ''));
-			$.ajax({
-				url: 'action.php',
-				type: 'POST',
-				data: data,
-			}).done(function (data) {
-
-				Fancybox.close();
-				Fancybox.show([{ src: "#modal-thanks", type: "inline" }]);
-				// window.location.replace("/thanks.html");
-				setTimeout(function () {
-					// Done Functions
-					th.trigger("reset");
-					// $.magnificPopup.close();
-					// ym(53383120, 'reachGoal', 'zakaz');
-					// yaCounter55828534.reachGoal('zakaz');
-				}, 4000);
-			}).fail(function () { });
-
-		});
-	},
+ 
 	heightwindow() {
 		// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 		let vh = window.innerHeight * 0.01;
@@ -285,7 +245,7 @@ function eventHandler() {
 	// JSCCommon.ifie();
 	JSCCommon.modalCall();
 	// JSCCommon.tabscostume('tabs');
-	// JSCCommon.mobileMenu();
+	JSCCommon.mobileMenu();
 	// JSCCommon.inputMask();
 	// JSCCommon.sendForm();
 	// JSCCommon.heightwindow();
@@ -339,26 +299,40 @@ function eventHandler() {
 		pagination: {
 			el: ' .swiper-pagination',
 			type: 'bullets',
-			clickable: true,
-			// renderBullet: function (index, className) {
-			// 	return '<span class="' + className + '">' + (index + 1) + '</span>';
-			// }
+			clickable: true, 
 		},
+
 	}
 
-	const swiper4 = new Swiper('.sBanners__slider--js', {
-		// slidesPerView: 5,
-		...defaultSl,
-		slidesPerView: 'auto',
-		freeMode: true,
-		loopFillGroupWithBlank: true,
-		touchRatio: 0.2,
-		slideToClickedSlide: true,
-		freeModeMomentum: true,
-
+	const swiper4 = new Swiper('.sStudentsCases__slider--js', { 
+		slidesPerView: 1,
+		loop: false,
+		navigation: {
+			nextEl: '.sStudentsCases .swiper-button-next',
+			prevEl: '.sStudentsCases .swiper-button-prev',
+		},
 	});
-	// modal window
+	const swiper5 = new Swiper('.sRewsSlider__slider--js', {
+		slidesPerView: 1,
+		loop: false,
+		navigation: {
+			nextEl: '.sRewsSlider .swiper-button-next',
+			prevEl: '.sRewsSlider .swiper-button-prev',
+		},
+	});
 
+	let videoBlockPlay = document.querySelectorAll(".video-item__video");
+	videoBlockPlay.forEach(el => {
+		el.addEventListener('click', () => { 
+				el.classList.add("play-video");
+				el.innerHTML = el.dataset.video; 
+		})
+	})
+
+
+	$(".dd-head-js").click(function(){
+		$(this).toggleClass("active").next().slideToggle();
+	})
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

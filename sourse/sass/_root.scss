@@ -2,21 +2,18 @@
 :root {
 	--animate-delay: 1.2s;
 	--bs-body-font-size: #{$em-base};
+ 
+	--sPT: #{rem(88)};
+	--sPB: #{rem(88)}; 
+	
+	--sTPB: #{rem(60)};
 
-	@include media-breakpoint-up(md) {
-
-		--sPT: #{rem(80)};
-		--sPB: #{rem(90)};
-		--sTPB: #{rem(40)};
+	@include media-breakpoint-up(lg) {
+		--swiperArrowPosition: calc(-1 * var(--swiperArrowSize) / 2 + 50px);
+		--swiperArrowSize: #{rem(64)};
 	}
-
-	--sPT: #{rem(80 * .5)};
-	--sPB: #{rem(90 * .5)};
-	--sTPB: #{rem(40 * .5)};
-
-
-		--swiperArrowSize: #{rem(68)};
-		--swiperArrowPosition: calc(-1 * var(--swiperArrowSize) / 2);
+	--swiperArrowSize: #{rem(40)};
+		--swiperArrowPosition: calc(-1 * var(--swiperArrowSize) / 2 );
 		--swiperBorderColorDef: var(--bs-primary);
 		--swiperColorDef: var(--bs-primary);
 		--swiperBgDef: #ffffff;
@@ -28,6 +25,8 @@
 
 	--fancybox-bg: rgba(24, 24, 27, .77);
 
+	--lgrad: linear-gradient(106.89deg, #FFF6F7 17.07%, #F4EEFF 75.11%),
+	#C4C4C4;
 
 
 	  //  --carousel-button-width: 48px;

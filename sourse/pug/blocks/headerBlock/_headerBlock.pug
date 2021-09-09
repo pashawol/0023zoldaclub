@@ -1,10 +1,14 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section#headerBlock&attributes(attributes)
+	+b.headerBlock#headerBlock&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-
-			.row
-						
+			h1 Клуб трейдеров  Анны Зольд
+			p Удваивайте депозит каждый  месяц, совершая одну  сделку в&nbsp;день!
+			+e.price 
+				+e.SPAN.lg
+					strong 8 300 
+					| ₽ 
+				small в месяц
+			+e.btn(href="#sPrises") Вступить в Клуб
+			+pic("head-img.png")
 	// end headerBlock

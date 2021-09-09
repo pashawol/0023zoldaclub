@@ -1,0 +1,28 @@
+mixin sPrises(data)
+	// start sPrises
+	+b.SECTION.sPrises.section#sPrises&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Сколько стоит участие в #[span Клубе трейдеров]
+			.text-center
+				+e.item.bg-gr
+					+e.title Резидент
+					ul 
+						li Подготовительный курс для абсолютных новичков
+						li 2&nbsp;недели интенсива с&nbsp;живым участием
+						li Домашние задания с&nbsp;разбором
+						li Встречи Клуба трейдеров 2&nbsp;раза в&nbsp;неделю на&nbsp;протяжении 1&nbsp;года
+					p #[span БОНУС:] Доступ на&nbsp;1&nbsp;год в&nbsp;закрытый Telegram-чат Клуба
+					p #[span БОНУС:] Участие в&nbsp;2-недельных интенсивах каждые 2&nbsp;месяца на&nbsp;протяжении 1&nbsp;года
+					p #[span БОНУС:] Контроль Вашей статистики торговли тренером и&nbsp;куратором
+					+e.price
+						span 8 300 
+						| ₽ 
+					+e.btn(href="#sPrises") Вступить в Клуб трейдеров
+				p Регистрация в Клуб трейдеров закончится через
+
+				.time__block
+						
+					
+					.idvd_timer.autostart(data-redirect_url='', data-duration_hours='36.5')
+	// end sPrises

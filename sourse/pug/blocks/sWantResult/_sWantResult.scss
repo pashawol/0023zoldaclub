@@ -1,0 +1,82 @@
+// start .sWantResult
+.sWantResult {
+		--sPT: 0;
+		// --sPB: ;
+		// --sTPB: ;
+	&__inner{
+		background: #5C49DF;
+		border-radius: 20px;
+		color: #fff;
+		@include media-breakpoint-up(lg){
+
+			padding: 48px;
+		}
+		padding: 20px;
+		position: relative;
+		&::before{
+			content: url(../img/svg/want-bg.svg);
+			@include a-cent1;
+			z-index: -1;
+		}
+		.row{
+			align-items: center;
+		}
+		picture{
+			text-align: center;
+				@include media-breakpoint-up(lg){
+
+					margin-left: -48px;
+					margin-bottom: -70px;
+				}
+			margin-top: -100px;
+		}
+	}
+	h5{
+		font-weight: bold;
+		@include media-breakpoint-up(lg) {
+			max-width: 310px;
+		}
+	}
+	p,
+	h5{
+		@include media-breakpoint-up(lg) {
+			
+			margin-bottom: 0;
+		}
+	}
+	&__btn{
+		@extend .btn, .btn-danger;
+		color: #fff;
+		margin-top: 35px;
+		position: relative;
+		@include media-breakpoint-up(lg){
+			
+			margin-bottom: -48px;
+		}
+		margin-bottom: -20px;
+		transform: translateY(50%);
+		
+	}
+	&--2{
+		picture{
+			margin-top: 0 !important;
+			margin-left: 0 !important	;
+			margin-bottom: 0 !important;
+		}
+		p{
+			max-width: rem(560);
+		}
+		h5{
+			@include media-breakpoint-up(lg) {
+				max-width: 210px;
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sWantResult

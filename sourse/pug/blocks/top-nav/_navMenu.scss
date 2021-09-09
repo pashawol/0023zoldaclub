@@ -1,11 +1,18 @@
 .menu{
-	display: flex;
-	list-style: none;
-	@include roww(20px);
+		@include media-breakpoint-up(lg) {
+
+			display: flex;
+			list-style: none;
+			max-width: 100%;
+			flex-wrap: wrap;
+			@include roww(26px);
+			text-align: center;
+		}
+	@include media-breakpoint-up(xl) {
+		--bs-gutter-x: 36px;
+	}
 	position: relative;
 	margin-bottom: 0;
-	max-width: 100%;
-	flex-wrap: wrap;
 	li{
 		// margin-left: 0;
 		// margin-right: 0;
@@ -13,7 +20,11 @@
 	}
 	a{
 		display: block;
-		text-align: center;
-		padding: rem(20) rem(10);
+		padding: rem(20) calc(var(--bs-gutter-x) / 2);
+		font-size: 14px;
+		font-weight: 500;
+		&:not(:hover){
+			color: $body-color;
+		}
 	}
 }

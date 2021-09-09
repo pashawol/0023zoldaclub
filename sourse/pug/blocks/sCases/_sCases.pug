@@ -1,0 +1,31 @@
+mixin sCases(data)
+	// start sCases
+	+b.SECTION.sCases.section#sCases&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Посмотрите на примеры сделок #[span Анны Зольд]
+				p  Когда Вы&nbsp;вступите в&nbsp;Клуб трейдеров и&nbsp;начнёте использовать полученную там систему заработка, Ваши результаты могут приблизиться к&nbsp;этим цифрам!
+			.row
+				mixin item(a, t)
+					+e.col.col-lg-6 
+						+b.video-item
+							+e.video(data-video=` <iframe src="https://player.vimeo.com/video/${a}?autoplay=1&loop=1&autopause=0" loading="lazy" width="800" height="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>` ).bg-wrap
+								+pic(`${a}.jpg`,'bg').picture-bg
+								//- img(   src=`https://i.vimeocdn.com/video/${a}?mw=700&mh=375` laoding="lazy" sizes="(max-width: 640px) 100vw, 640px" , alt="")
+							+e.title
+								| Видео-пример: 
+								span.text-primary= t 
+								block
+				+item(`597797770`,`+$1034 за 36 минут`)
+				+item(`594520709`,`+$13000 за 10 дней`)
+				+item(`593869496`,`+$1131 за 5 часов`)
+				+item(`593607927`,`+$1276 за 9 часов `) 
+				+item(`552848539`,`С $5 до $2.700 за 10 сделок `) 
+				+item(`532480397`,`+$8.000 в прямом эфире `) 
+				+item(`526523755`,`+$780 в прямом эфире`) 
+				+item(`477608952`,`+$18.846 за 1 неделю `) 
+				+item(`453213769`,`+$3.800 за 2 часа `) 
+				+item(`447960869`,`+$1.447 за 1 час `) 
+				+item(`452154528`,`+$6.050,40 за 2 дня `) 
+				+item(`447066839`,`+$5.172 за 1 день`) 
+	// end sCases

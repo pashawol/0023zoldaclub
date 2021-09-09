@@ -7,8 +7,7 @@
 		text-decoration: none !important; 
 		vertical-align: middle;
 		@include mt;
-		display: grid;
-		place-items: center;
+		display: block;
 		&:hover{
 		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
 			// opacity: .6 ;

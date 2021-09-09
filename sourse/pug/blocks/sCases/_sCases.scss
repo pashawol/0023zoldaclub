@@ -1,0 +1,67 @@
+// start .sCases
+.sCases {
+		--sPT: 60px;
+		// --sPB: ;
+		// --sTPB: ;
+	.section-title{
+		max-width: rem(950);
+	}
+	.row{
+		--bs-gutter-y: var(--bs-gutter-x);
+	} 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sCases
+
+
+.video-item{
+	background: #FFFFFF;
+	border: 1px solid rgba(92, 73, 223, 0.1); 
+	box-shadow: 0px 30px 37px rgba(240, 240, 240, 0.49);
+	border-radius: 20px;
+	padding: 24px;
+	text-align: center;
+	min-height: 100%;
+	@include mt;
+	&:hover{
+		box-shadow: 0px 0 0 rgba(240, 240, 240, 0.49);
+		
+	}
+	&__video{
+		@include block(539,290);
+		cursor: pointer;
+		background-color: $body-color;
+		margin-bottom: 30px;
+		&:hover{
+			img {
+				opacity: 0.9;
+			}
+		}
+		&::after,
+		img,
+		iframe{
+			@include a-cent;
+			width: 100%;
+			height: 100%;
+			@include mt;
+		}
+		&::after{
+			content: url(../img/svg/play.svg); 
+			width: 64px;
+			height: 40px; 
+		}
+		&.play-video::after{
+			opacity: 0;
+			pointer-events: none
+		}
+	}
+	&__title{
+		@extend .h4;
+		font-weight: bold;
+	}
+}

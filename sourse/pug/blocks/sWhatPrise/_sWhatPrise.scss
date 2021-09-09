@@ -1,0 +1,66 @@
+// start .sWhatPrise
+.sWhatPrise {
+		// --sPT: ;
+		// --sPB: ;
+		// --sTPB: ;
+		@include media-breakpoint-up(lg) {
+			p{
+				font-size: rem(20);
+			}
+		}
+		&__col{
+			@include media-breakpoint-up(lg) {
+
+				position: relative;
+				picture{
+					img{
+						max-width: none;
+					}
+					// width: auto;
+					position: absolute;
+					left: rem(0);
+					top: 150px;
+					z-index: -1;
+				}
+			}
+		}
+				&__block {
+					margin-left: auto;
+					margin-right: auto;
+					@include media-breakpoint-up(lg) {
+						max-width: rem(584);
+					}
+
+					@include media-breakpoint-up(sm) {
+						padding: rem(28) rem(60) rem(56);
+					}
+
+					padding: rem(28) rem(20) rem(56);
+					margin-bottom: 30px;
+					border-radius: 20px;
+
+				}
+				&__btn{
+					@extend .btn, .btn-gradient;
+					width: 100%;
+					margin-top: 30px;
+				}
+				&__price {
+					font-size: 31px;
+					text-align: center;
+					margin-bottom: 30px;
+
+					span {
+						color: #5C49DF;
+						font-size: 42px;
+						font-weight: 600;
+					}
+				}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sWhatPrise
