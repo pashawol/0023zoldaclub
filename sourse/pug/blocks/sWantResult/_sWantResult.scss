@@ -37,6 +37,11 @@
 			max-width: 310px;
 		}
 	}
+	p{
+		@include media-breakpoint-up(lg) {
+		font-size: rem(20);
+	}
+	}
 	p,
 	h5{
 		@include media-breakpoint-up(lg) {
@@ -52,6 +57,7 @@
 		@include media-breakpoint-up(lg){
 			
 			margin-bottom: -48px;
+			margin-top: 0;
 		}
 		margin-bottom: -20px;
 		transform: translateY(50%);

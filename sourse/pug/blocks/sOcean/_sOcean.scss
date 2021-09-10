@@ -1,7 +1,7 @@
 // start .sOcean
 .sOcean {
 		// --sPT: ;
-		// --sPB: ;
+		--sPB: 0;
 		// --sTPB: ;
 	h2{
 		max-width: rem(770);
@@ -56,7 +56,7 @@
 		padding-left: rem(60);
 		list-style: none;
 		@include media-breakpoint-up(md) {
-			font-size: 20px;
+			// font-size: 20px;
 			max-width: rem(300);
 			margin-bottom: 0;
 		}

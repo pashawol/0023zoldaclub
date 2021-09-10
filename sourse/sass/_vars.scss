@@ -533,7 +533,7 @@ $table-variants: ("primary": shift-color($primary, $table-bg-scale),
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
 // scss-docs-start input-btn-variables
-$input-btn-padding-y: .575rem !default;
+$input-btn-padding-y: rem(13) !default;
 $input-btn-padding-x: rem(20) !default;
 $input-btn-font-family: null !default;
 $input-btn-font-size: rem(20) !default;

@@ -123,8 +123,11 @@ body {
 
 .section-title {
 	margin-bottom: var(--sTPB);
-	p{
-		font-size: rem(20);
+	@include media-breakpoint-up(xl) {
+		
+		p{
+			font-size: rem(20);
+		}
 	}
 	h2{
 		font-weight: bold;

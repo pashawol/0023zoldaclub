@@ -3,10 +3,15 @@
 	--animate-delay: 1.2s;
 	--bs-body-font-size: #{$em-base};
  
-	--sPT: #{rem(88)};
-	--sPB: #{rem(88)}; 
-	
-	--sTPB: #{rem(60)};
+	@include media-breakpoint-up(md){
+		
+		--sPT: #{rem(88)};
+		--sPB: #{rem(88)}; 
+		--sTPB: #{rem(60)};
+	}
+	--sPT: #{rem(50)};
+	--sPB: #{rem(50)}; 
+	--sTPB: #{rem(40)};
 
 	@include media-breakpoint-up(lg) {
 		--swiperArrowPosition: calc(-1 * var(--swiperArrowSize) / 2 + 50px);

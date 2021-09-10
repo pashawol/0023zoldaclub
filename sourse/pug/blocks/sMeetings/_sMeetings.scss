@@ -10,7 +10,9 @@
 		}
 		p{
 			@include media-breakpoint-up(lg) {
-				font-size: rem(20);
+				&:not(.sm) {
+					font-size: rem(20);
+				}
 			}
 		}
 
@@ -42,10 +44,10 @@
 				text-align: center;
 			}
 			&::before{
-				content: '';
+				content: url(../img/svg/hvost.svg);
 				position: absolute;
-				@include triangle(50px, #5C49DF, up-left);
-				top: 99%;
+				// @include triangle(50px, #5C49DF, up-left);
+				top: calc(100% - 32px);
 				left: 0;
 				// border-radius: 20px;
 				
