@@ -1,5 +1,5 @@
 /**
- * Swiper Vue 7.0.5
+ * Swiper Vue 7.0.9
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: September 9, 2021
+ * Released on: October 18, 2021
  */
 
 import { Swiper } from './swiper.js';

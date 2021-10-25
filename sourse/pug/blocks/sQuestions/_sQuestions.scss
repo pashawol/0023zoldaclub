@@ -80,7 +80,7 @@
 			height: 1px;
 			position: absolute;
 			@include a-cent;
-			background: #5c49df;
+			background: $primary;
 			@include mt;
 		}
 		&::after{

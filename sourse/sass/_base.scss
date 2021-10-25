@@ -527,9 +527,9 @@ iframe {
 .btn-gradient{
 	@extend .btn-primary;
 	border: none;
-	background: var(--bg, linear-gradient(94.41deg, #5743DE 4.72%, #A84BD7 100%));
+	background: var(--bg, linear-gradient(94.41deg, #516BAE 4.72%, #4869A7 100%));
 	background-position: 50% 50%;
-	box-shadow: 0px 8.57143px 24px rgba(155, 74, 217, 0.4);
+	box-shadow: 0px 15px 42px rgba(0, 0, 0, 0.4);
 	background-size: 200% 200%;
 	@include mt;
 	&:hover{
@@ -541,7 +541,7 @@ iframe {
 .text-gradient{
 	color: white;
 	/* Fallback: assume this color ON TOP of image */ 
-	 background: linear-gradient(96.07deg, #9285EB 0.98%, #5541DD 75.06%); 
+	 background: linear-gradient(94.41deg, #516BAE 4.72%, #4869A7 100%); 
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	// color: transparent;

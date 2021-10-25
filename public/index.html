@@ -15,171 +15,51 @@
 	</head>
 	<body class="main-page">
 		<div class="main-wrapper">
-			<div class="menu-mobile menu-mobile--js d-lg-none">
-				<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
-				</div>
-				<div class="menu-mobile__inner">
-					<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						<li class="menu-item" itemprop="item"><a href="#header" itemprop="url">В начало</a></li>
-						<li class="menu-item" itemprop="item"><a href="#sAuthor" itemprop="url">Об авторе</a></li>
-						<li class="menu-item" itemprop="item"><a href="#sMainFeatures" itemprop="url">О Клубе</a></li>
-						<li class="menu-item" itemprop="item"><a href="#sSchedule" itemprop="url">Программа</a></li>
-						<li class="menu-item" itemprop="item"><a href="#sBonuses" itemprop="url">Бонусы</a></li>
-						<li class="menu-item" itemprop="item"><a href="#sPrises" itemprop="url">Стоимость</a></li>
-						<li class="menu-item" itemprop="item"><a href="#sStudentsCases" itemprop="url">Результаты</a></li>
-						<li class="menu-item" itemprop="item"><a href="#sRews" itemprop="url">Отзывы</a></li>
-					</ul>
-				</div>
-			</div>
-			<!--  мобильное меню-->
 			<!-- start header-->
 			<header class="header" id="header">
-				<!-- start top-nav-->
-				<div class="top-nav block-with-lazy">
+				<!-- start headerBlock-->
+				<div class="headerBlockNew bg-wrap" id="headerBlock">
+					<!-- picture-->
+					<picture class="picture-bg"> 
+						<source type="image/webp" srcset="img/@2x/webp/head-bg2.webp" media="(min-width:576px)"/>
+						<source type="image/webp" srcset="img/@1x/webp/head-bg2.webp"/>
+						<source type="image/jpg" srcset="img/@2x/head-bg2.jpg" media="(min-width:576px)"/>
+						<source type="image/jpg" srcset="img/@1x/head-bg2.jpg"/><img class="object-fit-js" src="img/@2x/head-bg2.jpg" alt="" loading="lazy"/>
+					</picture>
+					<!-- /picture-->
 					<div class="container">
-						<div class="top-nav__inner">
-							<div class="row">
-								<div class="col d-none d-lg-block">
-									<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-										<li class="menu-item" itemprop="item"><a href="#header" itemprop="url">В начало</a></li>
-										<li class="menu-item" itemprop="item"><a href="#sAuthor" itemprop="url">Об авторе</a></li>
-										<li class="menu-item" itemprop="item"><a href="#sMainFeatures" itemprop="url">О Клубе</a></li>
-										<li class="menu-item" itemprop="item"><a href="#sSchedule" itemprop="url">Программа</a></li>
-										<li class="menu-item" itemprop="item"><a href="#sBonuses" itemprop="url">Бонусы</a></li>
-										<li class="menu-item" itemprop="item"><a href="#sPrises" itemprop="url">Стоимость</a></li>
-										<li class="menu-item" itemprop="item"><a href="#sStudentsCases" itemprop="url">Результаты</a></li>
-										<li class="menu-item" itemprop="item"><a href="#sRews" itemprop="url">Отзывы</a></li>
-									</ul>
-								</div>
-								<div class="col-lg-auto col">
-									<a class="top-nav__btn" href="#sPrises"> Вступить в Клуб
-									</a>
-								</div>
-								<div class="col-auto d-lg-none">
-									<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
-									</div>
+						<div class="row">
+							<div class="col-xl-6">
+								<h1>Успейте БЕСПЛАТНО занять Ваше место на&nbsp;онлайн-интенсиве &laquo;Разгон депозита с&nbsp;Анной Зольд&raquo;</h1>
+								<ul>
+									<li>Булет первый с&nbsp;крутейшей информацией для наглядности отображения контента в&nbsp;несколеько строк</li>
+									<li>Булет первый с&nbsp;крутейшей информацией для наглядности отображения контента в&nbsp;несколеько строк</li>
+									<li>Булет первый с&nbsp;крутейшей информацией для наглядности отображения контента в&nbsp;несколеько строк </li>
+								</ul>
+								<div class="form-wrap">
+									<form>
+										<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="email" type="email" placeholder="Введите Ваш e-mail"/>
+										</div>
+										<!-- +e.input-wrap-->
+										<button class="form-wrap__btn" type="submit">Получить доступ
+										</button>
+									</form>
 								</div>
 							</div>
+							<div class="headerBlockNew__col col-xl-6">
+								<p>Вы&nbsp;узнаете о&nbsp;легендарной системе трейдинга, которая позволила автору выбраться из&nbsp;долгов в&nbsp;3&nbsp;миллиона рублей, а&nbsp;затем выйти на&nbsp;заработок $5000-10000&nbsp;в каждой сделке, начав всего с&nbsp;$2!</p>
+								<!-- picture-->
+								<picture> 
+									<source type="image/webp" srcset="img/@2x/webp/head-img2.webp"/><img src="img/@2x/head-img2.png" alt="" loading="lazy"/>
+								</picture>
+								<!-- /picture-->
+							</div>
 						</div>
-					</div>
-				</div>
-				<!-- end top-nav-->
-				<!-- start headerBlock-->
-				<div class="headerBlock" id="headerBlock">
-					<div class="container">
-						<h1>Клуб трейдеров  Анны Зольд</h1>
-						<p>Удваивайте депозит каждый  месяц, совершая одну  сделку в&nbsp;день!</p>
-						<div class="headerBlock__price"> <span class="headerBlock__lg"><strong>8 300 </strong>₽ </span><small>в месяц</small>
-						</div>
-						<a class="headerBlock__btn" href="#sPrises">Вступить в Клуб
-						</a>
-						<!-- picture-->
-						<picture> 
-							<source type="image/webp" srcset="img/@2x/webp/head-img.webp" media="(min-width:576px)"/>
-							<source type="image/webp" srcset="img/@1x/webp/head-img.webp"/>
-							<source type="image/png" srcset="img/@2x/head-img.png" media="(min-width:576px)"/>
-							<source type="image/png" srcset="img/@1x/head-img.png"/><img src="img/@2x/head-img.png" alt="" loading="lazy"/>
-						</picture>
-						<!-- /picture-->
 					</div>
 				</div>
 				<!-- end headerBlock-->
 			</header>
 			<!-- end header-->
-			<!-- start sDream-->
-			<section class="sDream section" id="sDream">
-				<div class="container">
-					<div class="section-title">
-						<h2> <span>Успешный трейдинг</span>– это мечта миллионов</h2>
-					</div>
-					<div class="row">
-						<div class="col-lg-6">
-							<p>Вы&nbsp;сидите у&nbsp;себя дома в&nbsp;уютном кресле с&nbsp;ноутбуком. Пара кликов мыши&nbsp;&mdash; и&nbsp;несколько тысяч долларов у&nbsp;Вас в&nbsp;кармане. План на&nbsp;день выполнен. Можно пойти погулять или перекусить в&nbsp;ресторанчике через дорогу.</p>
-							<p>Вы&nbsp;никуда не&nbsp;торопитесь, у&nbsp;Вас всегда есть время и&nbsp;на&nbsp;увлекательную прибыльную торговлю, и&nbsp;на&nbsp;шикарный отдых. Вы&nbsp;давно уже не&nbsp;помните, как выглядит Ваш бывший начальник. А&nbsp;&laquo;зарплату&raquo; начисляете себе сами переводом на&nbsp;карточку с&nbsp;брокерского счёта.</p>
-							<p><strong>Вы&nbsp;можете позволить себе всё&nbsp;&mdash;  от&nbsp;дорогих брендовых вещей  до&nbsp;частных перелётов. А&nbsp;на&nbsp;Ваши  праздники приезжают выступать  звёзды мировой эстрады.</strong></p>
-						</div>
-						<div class="col">
-							<div class="sDream__block"> 
-								<h3>Мечтать можно долго, но&nbsp;ведь сейчас Вам кажется, что зарабатывать на&nbsp;жизнь трейдингом&nbsp;&mdash; это удел избранных:</h3>
-								<p>Вы&nbsp;знаете, что на&nbsp;финансовых рынках крутятся миллиарды долларов, но&nbsp;Вам кажется, что трейдинг&nbsp;&mdash; это сложно и&nbsp;не&nbsp;для Вас.</p>
-								<p>Вы&nbsp;пробовали обучаться трейдингу, и&nbsp;даже получили какие-то &laquo;очень умные&raquo; знания, но&nbsp;денег в&nbsp;кармане так и&nbsp;не&nbsp;прибавилось.</p>
-								<p>Порой Вы&nbsp;думаете: &laquo;Если&nbsp;бы я&nbsp;не&nbsp;допускал ошибок, я&nbsp;бы начал зарабатывать&raquo;, но&nbsp;Вы понятия не&nbsp;имеете, как этих ошибок избегать.</p>
-								<p>Иногда Вам даже кажется, что зарабатывать  на&nbsp;жизнь трейдингом&nbsp;&mdash; это удел избранных и&nbsp;вообще всё это бывает только в&nbsp;красивых фильмах.</p>
-								<!-- picture-->
-								<picture> 
-									<source type="image/webp" srcset="img/@2x/webp/dream-img.webp" media="(min-width:576px)"/>
-									<source type="image/webp" srcset="img/@1x/webp/dream-img.webp"/>
-									<source type="image/png" srcset="img/@2x/dream-img.png" media="(min-width:576px)"/>
-									<source type="image/png" srcset="img/@1x/dream-img.png"/><img src="img/@2x/dream-img.png" alt="" loading="lazy"/>
-								</picture>
-								<!-- /picture-->
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end sDream-->
-			<!-- start sSecret-->
-			<section class="sSecret section" id="sSecret">
-				<div class="container">
-					<div class="section-title">
-						<h2> <span>Секретный секрет:  </span>если ничего не менять, ничего не изменится</h2>
-					</div>
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="sSecret__block"> 
-								<p>Вы&nbsp;и&nbsp;дальше будете вставать по&nbsp;будильнику, шагать на&nbsp;предприятие или в&nbsp;офис, терпеть сумасшедшего начальника и&nbsp;странноватых коллег, отдыхать раз в&nbsp;год на&nbsp;даче, одеваться в&nbsp;масс-маркете и&nbsp;ездить на&nbsp;подержанной иномарке.</p>
-								<p><strong>Нужен какой-то &laquo;щелчок&raquo;</strong>, откровение, которое развеет туман в&nbsp;голове и&nbsp;позволит Вам увидеть простой и&nbsp;ясный путь к&nbsp;большим деньгам на&nbsp;финансовых рынках. Придаст Вам сил и&nbsp;решимости. Вдохновит Вас, даст мотивацию и&nbsp;непоколебимую уверенность в&nbsp;результате.</p>
-								<h4>Что это может быть? Место? Обстоятельства? Знания? Инструменты?</h4>
-								<!-- picture-->
-								<picture class="d-none d-lg-block"> 
-									<source type="image/webp" srcset="img/@2x/webp/secret-img.webp" media="(min-width:576px)"/>
-									<source type="image/webp" srcset="img/@1x/webp/secret-img.webp"/>
-									<source type="image/png" srcset="img/@2x/secret-img.png" media="(min-width:576px)"/>
-									<source type="image/png" srcset="img/@1x/secret-img.png"/><img src="img/@2x/secret-img.png" alt="" loading="lazy"/>
-								</picture>
-								<!-- /picture-->
-							</div>
-						</div>
-						<div class="sSecret__col col-lg-6">
-							<p>Всё это важно и&nbsp;необходимо. Но&nbsp;на&nbsp;первом месте должен быть человек.</p>
-							<p><strong>Вам нужен человек,</strong> который вдохновит Вас своим примером. Поразит гениальной простотой своего подхода и&nbsp;стройным ходом мыслей. А&nbsp;после доведёт Вас за&nbsp;руку до&nbsp;результата.</p>
-							<p><strong>Мы&nbsp;нашли для Вас такого человека!</strong></p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end sSecret-->
-			<!-- start sAuthor-->
-			<section class="sAuthor section" id="sAuthor">
-				<div class="container">
-					<div class="section-title">
-						<h2> <span>Анна Зольд – </span>успешный трейдер 
-							и&nbsp;талантливый преподаватель
-						</h2>
-					</div>
-					<div class="sAuthor__block">
-						<ul>
-							<li><strong>14&nbsp;лет</strong>  Анна прибыльно торгует на&nbsp;рынке форекс.</li>
-							<li><strong>Сертифицированный партнёр</strong>  брокерской компании ИнстаФорекс.</li>
-							<li><strong>5&nbsp;лет обучает обычных людей </strong> профессии трейдера.</li>
-							<li><strong>Уже более 800 человек</strong> прошли групповое обучение у&nbsp;Анны. Это самые разные категории людей&nbsp;&mdash; офисные работники, домохозяйки, фрилансеры, простые рабочие, пенсионеры.</li>
-							<li> <strong>127 человек прошли</strong> у&nbsp;Анны индивидуальное обучение и&nbsp;сопровождение. Среди них&nbsp;&mdash; крупные бизнесмены и&nbsp;чиновники.</li>
-							<li>На&nbsp;основе собственного многолетнего опыта Анна  <strong>создала сверхэффективную систему</strong> обучения трейдингу. Эта система идеально подходит для абсолютных новичков, а&nbsp;также для тех, у&nbsp;кого уже много лет не&nbsp;получается заработать на&nbsp;финансовых рынках.</li>
-							<li> <strong>80% времени и&nbsp;внимания в&nbsp;торговле и&nbsp;в&nbsp;обучении трейдингу</strong> Анна уделяет вопросам психологии. Поэтому с&nbsp;успехом решает главную проблему, которая мешает зарабатывать абсолютному большинству трейдеров&nbsp;&mdash; эмоции в&nbsp;торговле.</li>
-						</ul>
-						<!-- picture-->
-						<picture> 
-							<source type="image/webp" srcset="img/@2x/webp/author-img.webp" media="(min-width:576px)"/>
-							<source type="image/webp" srcset="img/@1x/webp/author-img.webp"/>
-							<source type="image/png" srcset="img/@2x/author-img.png" media="(min-width:576px)"/>
-							<source type="image/png" srcset="img/@1x/author-img.png"/><img src="img/@2x/author-img.png" alt="" loading="lazy"/>
-						</picture>
-						<!-- /picture-->
-					</div>
-				</div>
-			</section>
-			<!-- end sAuthor-->
 			<!-- start sCases-->
 			<section class="sCases section" id="sCases">
 				<div class="container">
@@ -405,496 +285,6 @@
 						</div>
 						<div class="text-center">
 							<a class="sWantResult__btn" href="#sPrises">Хочу такие результаты! Иду в Клуб!
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end sWantResult-->
-			<!-- start sOcean-->
-			<section class="sOcean section" id="sOcean">
-				<div class="container">
-					<div class="section-title">
-						<h2>Бушующий океан трейдинга полон зубастых акул, готовых  <span>сожрать Ваши деньги каждую секунду</span></h2>
-					</div>
-					<div class="row">
-						<div class="col-xl-7 col-lg-6">
-							<p>И&nbsp;вот, наконец-то, спустя долгие месяцы и&nbsp;годы плавания, когда&nbsp;Вы настолько измождены шторами, что не&nbsp;чувствуете ничего, кроме вкуса соли на&nbsp;губах, а&nbsp;Ваш корабль готов вот-вот пойти ко&nbsp;дну из-за огромной пробоины, Вы&nbsp;нашли райский остров. С&nbsp;берега Вам машут приветливые люди. Вы&nbsp;причаливаете, выходите на&nbsp;пляж и&nbsp;падаете без сил на&nbsp;песок. Улыбаетесь лучам солнца и&nbsp;чувствуете, что&nbsp;Вы дома.</p>
-							<p>Местные жители Вас накормят, согреют и&nbsp;переоденут. Уже на&nbsp;следующее утро&nbsp;Вы придёте в&nbsp;себя и&nbsp;начнёте новую жизнь. Полную счастливых открытий и&nbsp;невероятных инсайтов, полную радости и&nbsp;любви к&nbsp;этому миру.</p>
-						</div>
-						<div class="col">
-							<div class="sOcean__block">
-								<!-- picture-->
-								<picture> 
-									<source type="image/webp" srcset="img/@2x/webp/sOcean-img.webp" media="(min-width:576px)"/>
-									<source type="image/webp" srcset="img/@1x/webp/sOcean-img.webp"/>
-									<source type="image/png" srcset="img/@2x/sOcean-img.png" media="(min-width:576px)"/>
-									<source type="image/png" srcset="img/@1x/sOcean-img.png"/><img src="img/@2x/sOcean-img.png" alt="" loading="lazy"/>
-								</picture>
-								<!-- /picture-->
-								<h3>Клуб трейдеров Анны Зольд&nbsp;&mdash; Ваш райский остров в&nbsp;бушующем океане трейдинга!</h3>
-							</div>
-						</div>
-					</div>
-					<ol> 
-						<li>Здесь Вы&nbsp;будете в&nbsp;полной безопасности, а&nbsp;Ваши деньги будут сохранены и&nbsp;приумножены</li>
-						<li>Здесь каждый, независимо от&nbsp;профессии, пола или возраста, сможет зарабатывать</li>
-						<li>Здесь каждый будет радоваться Вашим успехам, будет готов помочь и&nbsp;поддержать</li>
-					</ol>
-					<div class="sOcean__footer">
-						<div class="row g-0">
-							<div class="col-lg-5">
-								<!-- picture-->
-								<picture class="left-img"> 
-									<source type="image/webp" srcset="img/@2x/webp/ocean-img2.webp"/><img src="img/@2x/ocean-img2.png" alt="" loading="lazy"/>
-								</picture>
-								<!-- /picture-->
-							</div>
-							<div class="col-lg-7">
-										<div class="sOcean__item2"> 
-											<div class="sOcean__icon-wrap"><img src="img/svg/ocean-i-1.svg" laoding="lazy" alt=""/>
-											</div>
-											<div>
-												<h5 class="strong">Вам захочется танцевать от&nbsp;счастья</h5>
-												<p>Потому что никто ещё не&nbsp;говорил с&nbsp;Вами о&nbsp;трейдинге так просто и&nbsp;душевно. Никто ещё с&nbsp;такой любовью не&nbsp;относился к&nbsp;Вашему желанию заработать</p>
-											</div>
-										</div>
-										<div class="sOcean__item2"> 
-											<div class="sOcean__icon-wrap"><img src="img/svg/ocean-i-2.svg" laoding="lazy" alt=""/>
-											</div>
-											<div>
-												<h5 class="strong">Вам будут рукоплескать сами Боги трейдинга</h5>
-												<p>Потому что&nbsp;Вы сделаете&nbsp;то, что сейчас кажется невозможным: Вы&nbsp;будете удваивать Ваш капитал ежемесячно, совершая всего одну сделку в&nbsp;день</p>
-											</div>
-										</div>
-										<div class="sOcean__item2"> 
-											<div class="sOcean__icon-wrap"><img src="img/svg/ocean-i-3.svg" laoding="lazy" alt=""/>
-											</div>
-											<div>
-												<h5 class="strong">Вас затопчут толпы мурашек по коже</h5>
-												<p>Потому сотни раз&nbsp;Вы будете наблюдать, как одна Ваша сделка за&nbsp;считанные минуты приносит Вам больше денег, чем вся Ваша месячная зарплата</p>
-											</div>
-										</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end sOcean-->
-			<!-- start sMainFeatures-->
-			<section class="sMainFeatures section" id="sMainFeatures">
-				<div class="container">
-					<div class="section-title">
-						<h2>
-							 В&nbsp;чём главные особенности <span>Клуба трейдеров</span></h2>
-					</div>
-					<div class="row">
-								<div class="sMainFeatures__col col-xl-4 col-md-6">
-									<div class="sMainFeatures__icon-wrap mb-5"><img src="img/svg/sMainFeatures-1.svg" laoding="lazy" alt=""/>
-									</div>
-									<div>
-										<h5 class="strong">Удвоение депозита  каждый&nbsp;месяц</h5>
-										<p>Вы&nbsp;получите технологию, которая позволит Вам удваивать Ваш капитал каждый месяц, совершая всего одну сделку в&nbsp;день. Это значит, что уже через несколько месяцев&nbsp;Вы сможете выйти на&nbsp;доход, в&nbsp;разы превышающий Вашу нынешнюю зарплату при минимальных затратах времени. Благодаря этому&nbsp;Вы наконец-то осуществите Ваши самые смелые мечты и&nbsp;желания: новый дом, автомобиль, качественный отдых</p>
-									</div>
-								</div>
-								<div class="sMainFeatures__col col-xl-4 col-md-6">
-									<div class="sMainFeatures__icon-wrap mb-5"><img src="img/svg/sMainFeatures-2.svg" laoding="lazy" alt=""/>
-									</div>
-									<div>
-										<h5 class="strong">Только живые  занятия</h5>
-										<p>На&nbsp;каждом занятии и&nbsp;каждой встрече Клуба трейдеров&nbsp;Вы сможете общаться с&nbsp;автором и&nbsp;другими участниками голосом, включать камеру (при желании) и&nbsp;демонстрировать рабочий стол Вашего компьютера. Вы&nbsp;будете максимально вовлечены в&nbsp;процесс, получите мотивацию и&nbsp;энергию для продвижения к&nbsp;цели. Благодаря этому&nbsp;Вы обязательно придёте к&nbsp;желаемому результату&nbsp;&mdash; высокой и&nbsp;стабильной прибыли на&nbsp;финансовых рынках.</p>
-									</div>
-								</div>
-								<div class="sMainFeatures__col col-xl-4 col-md-6">
-									<div class="sMainFeatures__icon-wrap mb-5"><img src="img/svg/sMainFeatures-3.svg" laoding="lazy" alt=""/>
-									</div>
-									<div>
-										<h5 class="strong">Работа на любом  финансовом&nbsp;рынке</h5>
-										<p>Вы&nbsp;получите систему торговли, которую сможете применять на&nbsp;любом интересующем Вас финансовом рынке: форекс, акции, фьючерсы, криптовалюты. Вы&nbsp;получите универсальные знания, навыки и&nbsp;инструменты, которые будут работать всегда и&nbsp;везде, лишь&nbsp;бы был график. Благодаря этому&nbsp;Вы сможете стабильно зарабатывать независимо от&nbsp;того, на&nbsp;каком рынке работаете.</p>
-									</div>
-								</div>
-								<div class="sMainFeatures__col col-xl-4 col-md-6">
-									<div class="sMainFeatures__icon-wrap mb-5"><img src="img/svg/sMainFeatures-4.svg" laoding="lazy" alt=""/>
-									</div>
-									<div>
-										<h5 class="strong">Подходит  для&nbsp;новичков</h5>
-										<p>Вы&nbsp;получите технологию, которая позволит Вам удваивать Ваш капитал каждый месяц, совершая всего одну сделку в&nbsp;день. Это значит, что уже через несколько месяцев&nbsp;Вы сможете выйти на&nbsp;доход, в&nbsp;разы превышающий Вашу нынешнюю зарплату при минимальных затратах времени. Благодаря этому&nbsp;Вы наконец-то осуществите Ваши самые смелые мечты и&nbsp;желания: новый дом, автомобиль, качественный отдых</p>
-									</div>
-								</div>
-								<div class="sMainFeatures__col col-xl-4 col-md-6">
-									<div class="sMainFeatures__icon-wrap mb-5"><img src="img/svg/sMainFeatures-5.svg" laoding="lazy" alt=""/>
-									</div>
-									<div>
-										<h5 class="strong">Подходит  для&nbsp;занятых</h5>
-										<p>На&nbsp;каждом занятии и&nbsp;каждой встрече Клуба трейдеров&nbsp;Вы сможете общаться с&nbsp;автором и&nbsp;другими участниками голосом, включать камеру (при желании) и&nbsp;демонстрировать рабочий стол Вашего компьютера. Вы&nbsp;будете максимально вовлечены в&nbsp;процесс, получите мотивацию и&nbsp;энергию для продвижения к&nbsp;цели. Благодаря этому&nbsp;Вы обязательно придёте к&nbsp;желаемому результату&nbsp;&mdash; высокой и&nbsp;стабильной прибыли на&nbsp;финансовых рынках.</p>
-									</div>
-								</div>
-								<div class="sMainFeatures__col col-xl-4 col-md-6">
-									<div class="sMainFeatures__icon-wrap mb-5"><img src="img/svg/sMainFeatures-6.svg" laoding="lazy" alt=""/>
-									</div>
-									<div>
-										<h5 class="strong">Работа  до&nbsp;результата</h5>
-										<p>Вы&nbsp;получите систему торговли, которую сможете применять на&nbsp;любом интересующем Вас финансовом рынке: форекс, акции, фьючерсы, криптовалюты. Вы&nbsp;получите универсальные знания, навыки и&nbsp;инструменты, которые будут работать всегда и&nbsp;везде, лишь&nbsp;бы был график. Благодаря этому&nbsp;Вы сможете стабильно зарабатывать независимо от&nbsp;того, на&nbsp;каком рынке работаете.</p>
-									</div>
-								</div>
-					</div>
-					<div class="text-center">
-						<a class="sMainFeatures__btn" href="#sPrises">Хочу в Клуб трейдеров
-						</a>
-					</div>
-				</div>
-			</section>
-			<!-- end sMainFeatures-->
-			<div class="bg-gr">
-				<!-- start sSchedule-->
-				<section class="sSchedule section" id="sSchedule">
-					<div class="container">
-						<div class="section-title">
-							<h2>Как будет проходить Ваше обучение и&nbsp;сопровождение <span>в&nbsp;Клубе трейдеров Анны Зольд</span></h2>
-						</div>
-						<h4 class="strong mb-4">Подготовительный курс для абсолютных новичков:</h4>
-						<div class="sSchedule__first-row row">
-							<div class="sSchedule__col col-lg-4 col-md-6">
-								<div class="schedule-item">
-									<div class="schedule-item__head">
-										<div class="row">
-											<div class="col">1 урок</div>
-										</div>
-									</div>
-									<div class="h5 strong">Открытие демо-счёта,  установка и настройка терминала</div>
-								</div>
-							</div>
-							<div class="sSchedule__col col-lg-4 col-md-6">
-								<div class="schedule-item">
-									<div class="schedule-item__head">
-										<div class="row">
-											<div class="col">2 урок</div>
-										</div>
-									</div>
-									<div class="h5 strong">Работа  <br>в&nbsp;терминале</div>
-								</div>
-							</div>
-							<div class="sSchedule__col col-lg-4 col-md-6">
-								<div class="schedule-item">
-									<div class="schedule-item__head">
-										<div class="row">
-											<div class="col">3 урок</div>
-										</div>
-									</div>
-									<div class="h5 strong">Что такое <br> &laquo;свеча&raquo;</div>
-								</div>
-							</div>
-							<div class="sSchedule__col col-lg-4 col-md-6">
-								<div class="schedule-item">
-									<div class="schedule-item__head">
-										<div class="row">
-											<div class="col">4 урок</div>
-										</div>
-									</div>
-									<div class="h5 strong">Уровни поддержки и&nbsp;сопротивления</div>
-								</div>
-							</div>
-							<div class="sSchedule__col col-lg-4 col-md-6">
-								<div class="schedule-item">
-									<div class="schedule-item__head">
-										<div class="row">
-											<div class="col">5 урок</div>
-										</div>
-									</div>
-									<div class="h5 strong">Целевые и&nbsp;локальные <br>  уровни</div>
-								</div>
-							</div>
-							<div class="sSchedule__col col-lg-4 col-md-6">
-								<div class="schedule-item">
-									<div class="schedule-item__head">
-										<div class="row">
-											<div class="col">6 урок</div>
-										</div>
-									</div>
-									<div class="h5 strong">Трендовые линии <br>  и&nbsp;пинбары</div>
-								</div>
-							</div>
-						</div>
-						<div class="row aling-items-center mb-5">
-							<div class="col-lg-4 mb-3">
-								<div class="row">
-									<div class="col-auto"><img src="img/svg/caledar-i.svg" laoding="lazy" alt=""/></div>
-									<div class="col">
-										<h4 class="strong">2&nbsp;недели интенсива  с&nbsp;живым участием</h4>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-8 mb-3">
-								<div class="h5">Трижды в&nbsp;неделю&nbsp;Вы участвуете в&nbsp;занятиях в&nbsp;формате конференций в&nbsp;Zoom, можете общаться с&nbsp;тренером голосом и&nbsp;задавать вопросы.</div>
-							</div>
-						</div>
-						<div class="sSchedule__second-row">
-							<div class="schedule-item">
-								<div class="schedule-item__head">
-									<div class="row">
-										<div class="col-auto text-primary">1 урок</div>
-										<div class="col">20 сентября, ПН, 19:00 МСК</div>
-									</div>
-								</div>
-								<div class="h5 strong">Уровни поддержки и&nbsp;сопротивления, трендовые линии, пробой уровней, как отличить настоящий пробой от&nbsp;ложного, что такое закрепление цены. Почему надо учитывать направление старших таймфреймов. Что такое сигналы на&nbsp;рынке форекс</div>
-							</div>
-							<div class="schedule-item">
-								<div class="schedule-item__head">
-									<div class="row">
-										<div class="col-auto text-primary">2 урок</div>
-										<div class="col">22 сентября, СР, 19:00 МСК</div>
-									</div>
-								</div>
-								<div class="h5 strong">Объединяем уровни поддержки-сопротивления с&nbsp;трендовыми линиями. Ценовые каналы в&nbsp;трендовом движении. Особенности поведения цены в&nbsp;канале.</div>
-							</div>
-							<div class="schedule-item">
-								<div class="schedule-item__head">
-									<div class="row">
-										<div class="col-auto text-primary">3 урок</div>
-										<div class="col">24 сентября, ПТ, 19:00 МСК</div>
-									</div>
-								</div>
-								<div class="h5 strong">Графические разворотные модели. Распознавание фигур, условия поиска. Фигура &laquo;голова-плечи&raquo;. Двойная вершина, тройная вершина, П-образная вершина. Связь графических моделей с&nbsp;уровнями поддержки-сопротивления. Фигуры продолжения тренда&nbsp;&mdash; треугольники, вымпелы, флаги. Зеркальные фигуры.</div>
-							</div>
-							<div class="schedule-item">
-								<div class="schedule-item__head">
-									<div class="row">
-										<div class="col-auto text-primary">4 урок</div>
-										<div class="col">27 сентября, ПН, 19:00 МСК</div>
-									</div>
-								</div>
-								<div class="h5 strong">Знакомство с&nbsp;предсказывающими, опережающими индикаторами. Что такое дивергенция. Разворот или откат цены. Конвергенция или скрытая дивергенция как сигнал продолжения тренда.</div>
-							</div>
-							<div class="schedule-item">
-								<div class="schedule-item__head">
-									<div class="row">
-										<div class="col-auto text-primary">5 урок</div>
-										<div class="col">29 сентября, СР, 19:00 МСК</div>
-									</div>
-								</div>
-								<div class="h5 strong">О&nbsp;чем могут рассказать свечи. Разворотные свечные паттерны: &laquo;молот&raquo; и&nbsp;&laquo;повешенный&raquo;, &laquo;модель поглощения&raquo;, &laquo;завеса из&nbsp;темных облаков&raquo;, &laquo;просвет в&nbsp;облаках&raquo;, &laquo;звезды вечерние и&nbsp;утренние&raquo;, &laquo;падающая звезда&raquo;, &laquo;перевернутый молот&raquo;, модель &laquo;харами-беременная&raquo;, &laquo;вершины и&nbsp;основания&raquo;, &laquo;пинцет&raquo;</div>
-							</div>
-							<div class="schedule-item">
-								<div class="schedule-item__head">
-									<div class="row">
-										<div class="col-auto text-primary">6 урок</div>
-										<div class="col">1 октября, ПТ, 19:00 МСК</div>
-									</div>
-								</div>
-								<div class="h5 strong">Объединяем полученные знания. Правила поведения трейдера. Мани-менеджмент или управление рисками. Журнал трейдера. Технология удвоения депозита каждый месяц</div>
-							</div>
-						</div>
-						<div class="row aling-items-center mb-5">
-							<div class="col-lg-4 mb-3">
-								<div class="row">
-									<div class="col-auto"><img src="img/svg/target.svg" laoding="lazy" alt=""/></div>
-									<div class="col">
-										<h4 class="strong">Домашние задания  с&nbsp;разбором</h4>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-8 mb-3">
-								<div class="h5">После каждого занятия интенсива&nbsp;Вы выполняете домашние задания. Тренер разбирает их&nbsp;и&nbsp;даёт Вам обратную связь в&nbsp;специальном разделе в&nbsp;группе участников.</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- end sSchedule-->
-				<!-- start sMeetings-->
-				<section class="sMeetings section" id="sMeetings">
-					<div class="container">
-						<div class="section-title">
-							<h2> <span>Встречи Клуба трейдеров </span>2&nbsp;раза в&nbsp;неделю на&nbsp;протяжении 1&nbsp;года</h2>
-						</div>
-						<div class="row">
-							<div class="col-lg-6">
-								<!-- picture-->
-								<picture class="mb-3"> 
-									<source type="image/webp" srcset="img/@2x/webp/meating-img.webp" media="(min-width:576px)"/>
-									<source type="image/webp" srcset="img/@1x/webp/meating-img.webp"/>
-									<source type="image/png" srcset="img/@2x/meating-img.png" media="(min-width:576px)"/>
-									<source type="image/png" srcset="img/@1x/meating-img.png"/><img src="img/@2x/meating-img.png" alt="" loading="lazy"/>
-								</picture>
-								<!-- /picture-->
-								<h5 class="text-primary strong">Встречи проходят по&nbsp;понедельникам (20:00-22:00&nbsp;МСК) и&nbsp;четвергам (12:00-14:00&nbsp;МСК) в&nbsp;формате онлайн-конференций в&nbsp;Zoom</h5>
-							</div>
-							<div class="col-lg-6">
-								<p>Сразу после 2-х недельного интенсива начнётся самая интересная, полезная и&nbsp;результативная часть Вашего пути&nbsp;&mdash; сопровождение в&nbsp;Клубе трейдеров!</p>
-								<p>На&nbsp;протяжении всего занятия&nbsp;Вы можете общаться с&nbsp;тренером и&nbsp;другими участниками голосом, включать камеру (при желании), демонстрировать Ваш торговый терминал, разбирать Ваши сделки и&nbsp;обсуждать любые вопросы в&nbsp;неформальной обстановке.</p>
-								<p>Вы&nbsp;заранее знаете, когда проходят встречи, и&nbsp;у&nbsp;Вас есть ссылка для подключения. Вы&nbsp;можете подключиться к&nbsp;такой встрече в&nbsp;любой момент и&nbsp;разобрать интересующие Вас вопросы. Не&nbsp;обязательно приходить к&nbsp;началу и&nbsp;оставаться до&nbsp;конца. Не&nbsp;обязательно приходить на&nbsp;обе встречи каждую неделю. Подключайтесь, когда удобно, получайте обратную связь от&nbsp;автора и&nbsp;общайтесь с&nbsp;другими участниками, которые вместе с&nbsp;Вами в&nbsp;этот момент тоже подключились к&nbsp;встрече</p>
-							</div>
-						</div>
-						<div class="sMeetings__comment"> 
-							<div class="row">
-								<div class="col">
-									<p>&laquo;Я&nbsp;искренне считаю, что обычные онлайн-тренинги безнадёжно устаревают. Когда автор вещает в&nbsp;одностороннем порядке, а&nbsp;слушатели могут лишь написать свой вопрос в&nbsp;чате&nbsp;&mdash; это малоэффективно и&nbsp;должно уйти в&nbsp;прошлое.</p>
-									<p>Чтобы достичь максимальных результатов у&nbsp;каждого участника, необходимо живое общение. Мы&nbsp;должны видеть и&nbsp;слышать друг друга в&nbsp;режиме онлайн. Тренер должен видеть торговый терминал ученика, чтобы направить его и&nbsp;помочь ему в&nbsp;моменте &bdquo;здесь и&nbsp;сейчас&ldquo;, а&nbsp;не&nbsp;в&nbsp;формате сухой обратной связи текстом.</p>
-									<p>Мы&nbsp;сделали&nbsp;то, чего боялись или не&nbsp;хотели делать другие. И&nbsp;теперь этот новый формат живого общения&nbsp;&mdash; обязательный элемент и&nbsp;одно из&nbsp;главных преимуществ Клуба трейдеров Анны Зольд&raquo;.</p>
-									<h5 class="strong">Артём Дудкевич</h5>
-									<p class="sm">Организатор и куратор Клуба</p>
-								</div>
-								<div class="col-lg-auto align-self-end">
-									<!-- picture-->
-									<picture> 
-										<source type="image/webp" srcset="img/@2x/webp/man.webp" media="(min-width:576px)"/>
-										<source type="image/webp" srcset="img/@1x/webp/man.webp"/>
-										<source type="image/png" srcset="img/@2x/man.png" media="(min-width:576px)"/>
-										<source type="image/png" srcset="img/@1x/man.png"/><img src="img/@2x/man.png" alt="" loading="lazy"/>
-									</picture>
-									<!-- /picture-->
-								</div>
-							</div>
-						</div>
-						<div class="text-center">
-							<a class="sMeetings__btn" href="#sPrises">Мне всё нравится! Иду в Клуб!
-							</a>
-						</div>
-					</div>
-				</section>
-				<!-- end sMeetings-->
-			</div>
-			<!-- start sBonuses-->
-			<section class="sBonuses section" id="sBonuses">
-				<div class="container">
-					<div class="section-title">
-						<h2> <span>Участвуя в&nbsp;Клубе трейдеров,</span>Вы&nbsp;получаете шикарные бонусы на&nbsp;общую сумму 270&nbsp;000&nbsp;рублей!</h2>
-					</div>
-					<div class="row">
-								<div class="sBonuses__col col-xl-4 col-lg-6">
-									<div class="sBonuses__item bg-gr">
-										<div class="sBonuses__label">Бонус!
-										</div>
-										<div class="sBonuses__title h5 strong">Доступ на&nbsp;1&nbsp;год  в&nbsp;закрытый Telegram-чат Клуба для общения участников и&nbsp;обмена опытом
-										</div>
-										<div class="sBonuses__footer text-center">
-											<div class="sBonuses__price"><span>30 000 </span>₽ 
-											</div>
-											<div class="sBonuses__label-foot"> Бесплатно!
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="sBonuses__col col-xl-4 col-lg-6">
-									<div class="sBonuses__item bg-gr">
-										<div class="sBonuses__label">Бонус!
-										</div>
-										<div class="sBonuses__title h5 strong">Участие в&nbsp;2-недельных живых интенсивах, которые будут проводиться для новых потоков каждые 2&nbsp;месяца на&nbsp;протяжении 1&nbsp;года
-										</div>
-										<p>За&nbsp;время Вашего участия в&nbsp;Клубе Вы&nbsp;сможете 6&nbsp;раз пройти живые занятия интенсива. Это&nbsp;6 Ваших новых шансов начать с&nbsp;начала, если вдруг&nbsp;Вы выпали из&nbsp;процесса по&nbsp;личным причинам</p>
-										<div class="sBonuses__footer text-center">
-											<div class="sBonuses__price"><span>165 000 </span>₽ 
-											</div>
-											<div class="sBonuses__label-foot"> Бесплатно!
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="sBonuses__col col-xl-4 col-lg-6">
-									<div class="sBonuses__item bg-gr">
-										<div class="sBonuses__label">Бонус!
-										</div>
-										<div class="sBonuses__title h5 strong">Контроль Вашей статистики торговли тренером  и&nbsp;куратором
-										</div>
-										<p>На&nbsp;старте сопровождения в&nbsp;Клубе Вы&nbsp;создадите мониторинг Вашего торгового счёта, а&nbsp;мы&nbsp;будем наблюдать за&nbsp;Вашей торговлей на&nbsp;протяжении года и&nbsp;корректировать Ваши действия при необходимости</p>
-										<div class="sBonuses__footer text-center">
-											<div class="sBonuses__price"><span>75 000 </span>₽ 
-											</div>
-											<div class="sBonuses__label-foot"> Бесплатно!
-											</div>
-										</div>
-									</div>
-								</div>
-					</div>
-				</div>
-			</section>
-			<!-- end sBonuses-->
-			<!-- start sPrises-->
-			<section class="sPrises section" id="sPrises">
-				<div class="container">
-					<div class="section-title">
-						<h2>Сколько стоит участие в <span>Клубе трейдеров</span></h2>
-					</div>
-					<div class="text-center">
-						<div class="sPrises__item bg-gr">
-							<div class="sPrises__title">Резидент
-							</div>
-							<ul> 
-								<li>Подготовительный курс для абсолютных новичков</li>
-								<li>2&nbsp;недели интенсива с&nbsp;живым участием</li>
-								<li>Домашние задания с&nbsp;разбором</li>
-								<li>Встречи Клуба трейдеров 2&nbsp;раза в&nbsp;неделю на&nbsp;протяжении 1&nbsp;года</li>
-							</ul>
-							<p><span>БОНУС:</span> Доступ на&nbsp;1&nbsp;год в&nbsp;закрытый Telegram-чат Клуба</p>
-							<p><span>БОНУС:</span> Участие в&nbsp;2-недельных интенсивах каждые 2&nbsp;месяца на&nbsp;протяжении 1&nbsp;года</p>
-							<p><span>БОНУС:</span> Контроль Вашей статистики торговли тренером и&nbsp;куратором</p>
-							<div class="sPrises__price"><span>8 300 </span>₽  в месяц
-							</div>
-							<a class="sPrises__btn" href="https://info-dvd.ru/bbm/order/annazoldclub" target="_blank"> Вступить в Клуб трейдеров
-							</a>
-						</div>
-						<p>Регистрация в Клуб трейдеров закончится через</p>
-						<div class="time__block">
-							<div class="idvd_timer autostart" data-redirect_url="" data-duration_hours="36.5"></div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end sPrises-->
-			<!-- start sWhatPrise-->
-			<section class="sWhatPrise section" id="sWhatPrise">
-				<div class="container">
-					<div class="section-title">
-						<h2>Что такое <span>8300 рублей в месяц?</span></h2>
-					</div>
-					<div class="row">
-						<div class="sWhatPrise__col col-lg-6">
-							<p>Смешно даже обсуждать. Этой суммы хватит на&nbsp;бензин или на&nbsp;проезд в&nbsp;общественном транспорте на&nbsp;месяц. <br/>А&nbsp;может и&nbsp;не&nbsp;хватит.</p>
-							<p>Можно на&nbsp;эти деньги 1-2 раза сходить с&nbsp;семьёй в&nbsp;ресторан. Хотя смотря какой ресторан...</p>
-							<p>А&nbsp;можно получить знания, опыт и&nbsp;поддержку человека, который умеет зарабатывать в&nbsp;десятки<br/>раз больше этой суммы всего лишь <br/>в&nbsp;одной сделке на&nbsp;финансовых <br/>рынках. И&nbsp;научит этому Вас.</p>
-							<!-- picture-->
-							<picture> 
-								<source type="image/webp" srcset="img/@2x/webp/glass.webp" media="(min-width:576px)"/>
-								<source type="image/webp" srcset="img/@1x/webp/glass.webp"/>
-								<source type="image/jpg" srcset="img/@2x/glass.jpg" media="(min-width:576px)"/>
-								<source type="image/jpg" srcset="img/@1x/glass.jpg"/><img src="img/@2x/glass.jpg" alt="" loading="lazy"/>
-							</picture>
-							<!-- /picture-->
-						</div>
-						<div class="col-lg-6">
-							<div class="sWhatPrise__block bg-gr">
-								<p><strong>Давайте посмотрим на&nbsp;этот вопрос по-другому.</strong></p>
-								<p>Каждый месяц&nbsp;Вы будете проводить с&nbsp;тренером и&nbsp;другими участниками Клуба трейдеров около 20&nbsp;часов в&nbsp;режиме онлайн.</p>
-								<p>8300 рублей разделить на&nbsp;20&nbsp;часов. Получится 415 рублей за&nbsp;1&nbsp;час занятий. <br/>Хм... Вы&nbsp;видели хоть одну школу, фитнесс-зал, секцию, кружок, да&nbsp;что угодно, где за&nbsp;час занятий с&nbsp;Вас возьмут 415&nbsp;рублей? Правильно, и&nbsp;мы&nbsp;не&nbsp;видели.</p>
-								<p><strong>415 рублей</strong>&nbsp;&mdash; это попить кофе с&nbsp;пончиком. Или получить знания и&nbsp;опыт, которые позволят Вам заработать в&nbsp;сотни и&nbsp;тысячи раз больше этой суммы. Что выбираете&nbsp;Вы?</p>
-								<a class="sWhatPrise__btn" href="#sPrises">Что тут думать? Иду в Клуб трейдеров!
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end sWhatPrise-->
-			<!-- start sWantResult-->
-			<section class="sWantResult sWantResult--2 section" id="sWantResult">
-				<div class="container"> 
-					<div class="sWantResult__inner">
-						<div class="row">
-							<div class="col-md-auto">
-								<!-- picture-->
-								<picture> 
-									<source type="image/webp" srcset="img/@2x/webp/result-img2.webp"/><img src="img/@2x/result-img2.png" alt="" loading="lazy"/>
-								</picture>
-								<!-- /picture-->
-							</div>
-							<div class="col">
-								<p>В течение 7 дней после старта первого занятия в Клубе трейдеров действует 100% гарантия возврата средств. Вы просто получите все Ваши деньги обратно, если Вам не понравится участие в Клубе трейдеров</p>
-							</div>
-							<div class="col-auto">
-								<h5>Риска&nbsp;&mdash; ноль.  Возможностей&nbsp;&mdash;  на&nbsp;десятки тысячи  долларов!</h5>
-							</div>
-						</div>
-						<div class="text-center">
-							<a class="sWantResult__btn" href="#sPrises"> Ура! Иду в Клуб!
 							</a>
 						</div>
 					</div>
@@ -5020,98 +4410,6 @@
 				</div>
 			</section>
 			<!-- end sRewsSlider-->
-			<div class="bg-gr">
-				<!-- start sQuestions-->
-				<section class="sQuestions section" id="sQuestions">
-					<div class="sQuestions__container container">
-						<div class="section-title">
-							<h2>Остались вопросы?</h2>
-						</div>
-						<div class="sQuestions__items sQuestions-dd-js">
-							<div class="sQuestions__item">
-								<div class="sQuestions__head dd-head-js">
-									<div class="sQuestions__head-txt">Каких брокеров Вы рекомендуете?
-									</div>
-									<div class="sQuestions__head-icon">
-									</div>
-								</div>
-								<div class="sQuestions__content dd-content-js">
-									<p>Для торговли на рынке FOREX:</p>
-									<p>Instaforex – рекомендация автора. Анна Зольд является сертифицированным партнёром Instaforex и много лет сама работает с личными крупными счетами у этого брокера.</p>
-									<p>Alpari Limited – рекомендация куратора проекта, который много лет работает с личными счетами у этого брокера.</p>
-									<p>Для торговли на бирже CME: AMP Global</p>
-									<p>Для торговли акциями американских компаний: InteractiveBrokers, Финам</p>
-									<p>Для торговли акциями российских компаний: БКС, Открытие, Финам</p>
-									<p>Важно понимать: Мы не берём на себя ответственность за Ваш выбор брокера и за те средства, которые Вы вводите на торговые счета. По желанию Вы можете выбрать любого другого брокера, с которым Вы давно работаете и которому доверяете.</p>
-								</div>
-							</div>
-							<div class="sQuestions__item">
-								<div class="sQuestions__head dd-head-js">
-									<div class="sQuestions__head-txt">На каких рынках работает система автора?
-									</div>
-									<div class="sQuestions__head-icon">
-									</div>
-								</div>
-								<div class="sQuestions__content dd-content-js">
-									<p>В результате Вашего участия в Клубе трейдеров Анны Зольд Вы станете полностью самостоятельным трейдером. Научитесь читать любые графики, управлять любым капиталом, заключать правильные сделки и самое главное – справляться с эмоциями в торговле. Все эти навыки профессионального трейдера Вы сможете применять на любом интересующем Вас рынке.</p>
-								</div>
-							</div>
-							<div class="sQuestions__item">
-								<div class="sQuestions__head dd-head-js">
-									<div class="sQuestions__head-txt">Сколько времени нужно будет уделять торговле?
-									</div>
-									<div class="sQuestions__head-icon">
-									</div>
-								</div>
-								<div class="sQuestions__content dd-content-js">3-4 часа в день – это максимум. В Клубе трейдеров Вы узнаете, как можно сократить это время до нескольких минут в день, если Вы слишком заняты. Качество и прибыльность торговли не зависят от количества совершённых сделок. На тренинге Вы научитесь заключать всего 1 сделку в день и при этом удваивать депозит каждый месяц.
-								</div>
-							</div>
-							<div class="sQuestions__item">
-								<div class="sQuestions__head dd-head-js">
-									<div class="sQuestions__head-txt">На чём основан подход автора (торговая система)?
-									</div>
-									<div class="sQuestions__head-icon">
-									</div>
-								</div>
-								<div class="sQuestions__content dd-content-js">
-									<p>На психологии. На правильной работе с эмоциями, которые возникают в процессе торговли. Если Вы научитесь этому – это и станет залогом Вашего успеха и заработка. Если Вы уже это понимаете и теперь Вас интересует чисто техническая сторона, то в основе торговой системы – уровни поддержки-сопротивления и трендовые линии. Вы научитесь строить их вручную на чистом графике. Также в системе применяются так называемые «опережающие» или «предсказывающие» индикаторы, которые позволяют прогнозировать дальнейшее движение цены: RSI, Стохастик, MACD, CCI.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- end sQuestions-->
-				<!-- start sFinal-->
-				<section class="sFinal section" id="sFinal">
-					<div class="container">
-						<div class="row">
-							<div class="col-xl-7 col-lg-6">
-								<div class="section-title">
-									<h2>P.S. Если Вы&nbsp;всё ещё думаете,  что у&nbsp;Вас получится, наверное,  <span>с&nbsp;Вами что-то не&nbsp;так...</span></h2>
-									<p>Может быть однажды&nbsp;Вы так &laquo;прогорели&raquo;, что теперь боитесь даже самых лучших возможностей и&nbsp;выгодных предложений.</p>
-									<p>Или Вы&nbsp;боитесь мнения Ваших близких, которые ничего не&nbsp;смыслят в&nbsp;финансовых рынках, но&nbsp;с&nbsp;пеной у&nbsp;рта доказывают, что это какая-то авантюра. Или просто тихо посмеиваются над Вами.</p>
-									<p>Возможно, Вы&nbsp;просто не&nbsp;верите в&nbsp;себя.<br/>Как&nbsp;бы там ни&nbsp;было, выбор всегда за&nbsp;Вами. Оставить всё как есть, ходить на&nbsp;завод или в&nbsp;офис за&nbsp;ежемесячную &laquo;подачку&raquo; шефа, ковырять грядки на&nbsp;даче в&nbsp;свой единственный в&nbsp;году отпуск, ездить на&nbsp;общественном транспорте или на&nbsp;подержанной иномарке...</p>
-									<p>Или вступить в&nbsp;Клуб трейдеров и&nbsp;получить знания и&nbsp;опыт, которые позволят Вам создать счастливое, изобильное будущее для себя и&nbsp;своих детей. Принять решение, которым&nbsp;Вы будете гордиться всю Вашу жизнь!</p>
-								</div>
-							</div>
-							<div class="col-xl-5 col-lg-6">
-								<!-- picture-->
-								<picture class="text-center"> 
-									<source type="image/webp" srcset="img/@2x/webp/girl.webp" media="(min-width:576px)"/>
-									<source type="image/webp" srcset="img/@1x/webp/girl.webp"/>
-									<source type="image/png" srcset="img/@2x/girl.png" media="(min-width:576px)"/>
-									<source type="image/png" srcset="img/@1x/girl.png"/><img src="img/@2x/girl.png" alt="" loading="lazy"/>
-								</picture>
-								<!-- /picture-->
-								<div class="sFinal__block"><span>Ну&nbsp;как?</span> Вы&nbsp;готовы доказать себе и&nbsp;всему миру, что&nbsp;Вы достойны гораздо более яркой, насыщенной и&nbsp;счастливой жизни?
-								</div>
-							</div>
-						</div>
-						<div class="text-center"><a class="btn btn-gradient" href="#sPrises">Вступить в Клуб трейдеров</a></div>
-					</div>
-				</section>
-				<!-- end sFinal-->
-			</div>
 			<footer class="foot">
 				<div class="container">
 					<div class="before"></div>
@@ -5126,13 +4424,16 @@
 											</svg>
 										</div>
 										<div class="col">
-											<p>
+											<p><span class="year-text"></span>
 												<script>
 													function InfoDVDCurrentYear(year) {
-														var cur = new Date();
-														if (cur.getFullYear() != year)
-															document.write(year + '&mdash;' + cur.getFullYear());
-														else document.write(year);
+														let yearSpan = document.querySelector('.year-text');
+														var cur = new Date(); 
+														yearSpan.innerHTML = (
+															cur.getFullYear() != year 
+															? (year + '&mdash;' + cur.getFullYear())
+															: year
+														)
 													}
 													InfoDVDCurrentYear('2008');
 												</script>  © издательство

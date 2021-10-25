@@ -4,7 +4,7 @@
 		// --sPB: ;
 		// --sTPB: ;
 	&__inner{
-		background: #5C49DF;
+		background: $primary;
 		border-radius: 20px;
 		color: #fff;
 		@include media-breakpoint-up(lg){
@@ -14,7 +14,7 @@
 		padding: 20px;
 		position: relative;
 		&::before{
-			content: url(../img/svg/want-bg.svg);
+			content: url(../img/svg/want-bg2.svg);
 			@include a-cent1;
 			z-index: -1;
 		}

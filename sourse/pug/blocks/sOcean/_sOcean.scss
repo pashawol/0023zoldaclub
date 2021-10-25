@@ -25,7 +25,7 @@
 		--sp: 20px;
 		padding: var(--sp);
 		color: #fff;
-		background: #5C49DF;
+		background: $primary;
 		border-radius: 20px;
 		h3{
 			font-weight: 600;
@@ -66,7 +66,7 @@
 				font-size: rem(128px);
 				font-weight: bold;
 				counter-increment: num;
-				color: #5C49DF; 
+				color: $primary; 
 				opacity: 0.23;
 				line-height: 1;
 				position: absolute;

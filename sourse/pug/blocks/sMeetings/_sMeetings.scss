@@ -24,7 +24,7 @@
 			text-align: center;
 		}
 		&__comment{
-			background: #5C49DF;
+			background: $primary;
 			border-radius: 20px 20px 20px 0;
 			color: #fff;
 			margin-top: 50px;
@@ -46,7 +46,7 @@
 			&::before{
 				content: url(../img/svg/hvost.svg);
 				position: absolute;
-				// @include triangle(50px, #5C49DF, up-left);
+				// @include triangle(50px, $primary, up-left);
 				top: calc(100% - 32px);
 				left: 0;
 				// border-radius: 20px;

@@ -47,6 +47,7 @@ export default function EffectCreative({
       const $slideEl = slides.eq(i);
       const slideProgress = $slideEl[0].progress;
       const progress = Math.min(Math.max($slideEl[0].progress, -params.limitProgress), params.limitProgress);
+      const originalProgress = Math.min(Math.max($slideEl[0].originalProgress, -params.limitProgress), params.limitProgress);
       const offset = $slideEl[0].swiperSlideOffset;
       const t = [swiper.params.cssMode ? -offset - swiper.translate : -offset, 0, 0];
       const r = [0, 0, 0];
@@ -83,8 +84,8 @@ export default function EffectCreative({
       $slideEl[0].style.zIndex = -Math.abs(Math.round(slideProgress)) + slides.length;
       const translateString = t.join(', ');
       const rotateString = `rotateX(${r[0]}deg) rotateY(${r[1]}deg) rotateZ(${r[2]}deg)`;
-      const scaleString = progress < 0 ? `scale(${1 + (1 - data.scale) * progress * multiplier})` : `scale(${1 - (1 - data.scale) * progress * multiplier})`;
-      const opacityString = progress < 0 ? 1 + (1 - data.opacity) * progress * multiplier : 1 - (1 - data.opacity) * progress * multiplier;
+      const scaleString = originalProgress < 0 ? `scale(${1 + (1 - data.scale) * originalProgress * multiplier})` : `scale(${1 - (1 - data.scale) * originalProgress * multiplier})`;
+      const opacityString = originalProgress < 0 ? 1 + (1 - data.opacity) * originalProgress * multiplier : 1 - (1 - data.opacity) * originalProgress * multiplier;
       const transform = `translate3d(${translateString}) ${rotateString} ${scaleString}`; // Set shadows
 
       if (custom && data.shadow || !custom) {
@@ -120,7 +121,8 @@ export default function EffectCreative({
     effectVirtualTransitionEnd({
       swiper,
       duration,
-      transformEl
+      transformEl,
+      allSlides: true
     });
   };
 

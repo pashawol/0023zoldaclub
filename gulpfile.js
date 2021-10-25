@@ -29,7 +29,7 @@ global.$ = {
     autoprefixer: require('autoprefixer'),
     postcssPresetEnv: require('postcss-preset-env'),
     cssnano: require('cssnano'),
-    postcssInlineSvg: require('postcss-inline-svg'),
+    // postcssInlineSvg: require('postcss-inline-svg'),
     nested: require('postcss-nested'),
     plumber: require('gulp-plumber'),
     webpack: require('webpack-stream'),
