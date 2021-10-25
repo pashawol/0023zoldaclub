@@ -132,8 +132,30 @@ p{
 // end.headerBlock
 
 .headerBlockNew{
+	&__date{
+		display: inline-block;
+		background-color: #fff;
+		color: $primary;
+		padding: em(2);
+		font-weight: bold;
+		font-size: rem(24);
+		margin-bottom: rem(20);
+	}
+	&__left-col{
+		@include media-breakpoint-down(xl) {
+			display: flex;
+			flex-direction: column;
+				ul{
+					order: 13;
+				}
+		}
+	}
 	// padding-bottom: 0;
 	@include media-breakpoint-up(xl) {
+		h1{
+			margin-right: rem(-100);
+			font-size: rem(42);
+		}
 		padding-top: rem(88);
 	}
 	padding-top: rem(48);
@@ -194,17 +216,33 @@ p{
 			padding-right: rem(24);
 		}
 	}
+	p{
+		max-width: rem(450);
+		font-size: rem(20);
+		@include media-breakpoint-up(xl) {
+			margin-left: auto;
+		}
+	}
 	&__col{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		p{
-			max-width: rem(459);
-			@include media-breakpoint-up(xl) {
-				margin-left: auto;
-			}
-		}
 		picture{
+			position: relative;
+			@include media-breakpoint-up(xl) {
+			width: auto;
+			margin-right: rem(-100);
+			}
+			&::before,
+			&::after{
+				content: url(../img/svg/curve-arrow.svg);
+				position: absolute;
+
+			}
+			&::before{
+				top: 40%;
+				left: -100px;
+			}
 			@include media-breakpoint-down(xl) {
 				margin-right: -30px;
 				margin-left: -15px;

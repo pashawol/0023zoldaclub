@@ -68,23 +68,27 @@
 
 .time__block {
 	// height: rem(75);
-	margin-top: 30px;
+	@include media-breakpoint-up(md) {
+		margin-top: 30px;
+		margin-bottom: rem(46);
+	}
+	margin-bottom: rem(16);
 }
 
 .idvd_timer {
 	font-size: rem(17);
 	font-weight: normal;
-
+	color: #fff;
 	@include media-breakpoint-up(md) {
 
 		max-width: rem(370);
 		text-align: left;
 		margin-top: 0;
-		margin-left: auto;
-		margin-right: auto;
+		// margin-left: auto;
+		// margin-right: auto;
 	}
 
-	margin-top: rem(60);
+	// margin-top: rem(60);
 
 }
 
@@ -140,7 +144,7 @@
 	}
 	width: 100%;
 	box-sizing: border-box;
-	padding: 0.3em 0;
+	padding: 0.2em 0;
 	font-weight: normal;
 	background-color: $primary;
 	font-family: $font-family-base;
@@ -150,5 +154,5 @@
 	margin-top: 0;
 	font-weight: normal;
 	font-family: $font-family-base;
-	color: $body-color;
+	color: #fff;
 }
