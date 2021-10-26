@@ -14,7 +14,7 @@
 		padding: 20px;
 		position: relative;
 		&::before{
-			content: url(../img/svg/want-bg2.svg);
+			content: url(../img/svg/want-bg.svg);
 			@include a-cent1;
 			z-index: -1;
 		}

@@ -232,21 +232,33 @@ p{
 			@include media-breakpoint-up(xl) {
 			width: auto;
 			margin-right: rem(-100);
-			}
 			&::before,
 			&::after{
-				content: url(../img/svg/curve-arrow.svg);
+				content: '';
+				background-image: url(../img/svg/arrow.svg);
+				width: 98px;
+				height: 98px;
+				background-size: contain;
+				background-repeat: no-repeat;
 				position: absolute;
-
+				z-index: 4;
+				
 			}
+		}
 			&::before{
 				top: 40%;
 				left: -100px;
+				@include media-breakpoint-down(xl) {
+					
+				}
 			}
-			@include media-breakpoint-down(xl) {
-				margin-right: -30px;
-				margin-left: -15px;
+			&::after{
+				top: 65%;
+				left: 0px; 
+				transform: rotateY(180deg) rotate(-140deg);
+
 			}
+			
 		}
 	}
 }
