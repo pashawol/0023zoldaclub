@@ -39,7 +39,7 @@ p{
 		}
 	}
 	&__btn{
-		@extend .btn, .btn-gradient;
+		@extend .btn, .btn-danger;
 	}
 	picture{
 		@include media-breakpoint-up(lg) {
@@ -205,7 +205,7 @@ p{
 			// margin-right: rem(-50);
 		}
 		&__btn{
-			@extend .btn, .btn-gradient;
+			@extend .btn, .btn-danger;
 			@include media-breakpoint-up(sm) {
 
 				margin-left: rem(-50);

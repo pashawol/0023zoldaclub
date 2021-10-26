@@ -50,7 +50,7 @@
 					padding: rem(25);
 				}
 				&__btn{
-					@extend .btn, .btn-gradient;
+					@extend .btn, .btn-danger;
 				}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
